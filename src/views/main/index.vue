@@ -29,6 +29,7 @@
       const mainData = reactive({})
 
       const init = () => {
+        console.log('init')
         console.log('props', props)
         console.log('context', context)
         console.log('_this', _this)
