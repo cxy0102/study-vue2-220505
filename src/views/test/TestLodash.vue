@@ -1,47 +1,38 @@
 <!--
  * @Project: study-vue2
- * @File:index
+ * @File:TestLodash
  * @Dsc: 描述
  * @Author wjz
- * @CreateDate 2022/5/5 17:05
+ * @CreateDate 2022/5/6 9:23
 -->
 <template>
   <div>
-    <div>
-      {{ mainData.showData }}
-    </div>
-    <div>
-      444444444444
-    </div>
+    555555555555555555
   </div>
 </template>
 
 <script>
 
   import {
-    // defineComponent,
+    defineComponent,
     onMounted,
     reactive,
     getCurrentInstance,
     // ref,
   } from '@vue/composition-api'
 
-  export default {
-    name: 'mainIndex',
+  export default defineComponent({
+    name: 'TestLodash',
     components: {},
     setup(props, context) {
-
       const _this = getCurrentInstance().proxy
-      const mainData = reactive({
-        showData: '2222222222',
-      })
+      const mainData = reactive({})
 
       const init = () => {
         console.log('init')
         console.log('props', props)
         console.log('context', context)
         console.log('_this', _this)
-        mainData.showData = '333333333'
       }
 
       onMounted(() => {
@@ -53,7 +44,7 @@
         init,
       }
     },
-  }
+  })
 </script>
 
 <style scoped>
